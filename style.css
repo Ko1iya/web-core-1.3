@@ -1,0 +1,309 @@
+/* Общие настройки елементов */
+
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-family: "TT Lakes", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+*,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* Делаем Хедер */
+
+.header__main {
+  padding: 0 16px 0 16px;
+  border-bottom: 1px solid #d9fff5;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 88px;
+  gap: 16px;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.header-item {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.header-item__button {
+  width: 40px;
+  height: auto;
+}
+
+.header-item__logo {
+  width: 97px;
+  height: 51px;
+}
+
+.header-decor {
+  display: flex;
+  align-items: center;
+}
+
+.header-decor__el {
+  min-width: 2px;
+  width: 2px;
+  height: 32px;
+  background: #eaeaea;
+  border-radius: 1px;
+}
+
+.header-decor-block {
+  width: 35vw;
+}
+
+/* Делаем Основную часть ---------------------------*/
+
+.main {
+  background: #f8f8f8;
+  padding-top: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 30px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  font-size: 28px;
+  position: relative;
+  justify-content: space-between;
+  padding-right: 66px;
+  flex-wrap: nowrap;
+}
+
+.title__el {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-size: 28px;
+  min-width: 260px;
+}
+
+.title::before {
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 8px;
+  background: #41f6d7;
+  left: -20px;
+  border-radius: 4px;
+}
+
+.nav-info {
+  display: none;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.subtitle {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  gap: 16px;
+}
+
+.subtitle__box {
+  display: flex;
+  width: 240px;
+  height: 40px;
+  background: none;
+  border: none;
+}
+
+.subtitle__box:hover {
+  cursor: pointer;
+}
+
+.header-item:hover {
+  cursor: pointer;
+}
+
+.subtitle--active {
+  border: 2px solid #b8ffec;
+  border-radius: 6px;
+  background: white;
+  min-width: 240px;
+}
+
+.subtitle__item {
+  font-size: 16px;
+  color: #7e7e82;
+  font-weight: 400;
+  margin: auto 16px auto 16px;
+  white-space: nowrap;
+}
+
+.decor-gradient {
+  background: linear-gradient(90deg, #f8f8f800, #f8f8f8);
+  height: 40px;
+  width: 24px;
+  right: 0px;
+  top: 175px;
+  position: absolute;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about__main {
+  display: flex;
+  flex-direction: column;
+  color: #1b1c21;
+  font-size: 14px;
+  gap: 16px;
+}
+
+.about__item {
+  font-size: 14px;
+}
+
+.read-more {
+  display: flex;
+  padding: 0;
+  font-weight: 500;
+  background: none;
+  border: none;
+}
+
+.read-more__el {
+  position: relative;
+  margin-left: 24px;
+  font-size: 16px;
+}
+
+.read-more__el::before {
+  position: absolute;
+  content: "";
+  background-image: url(/img/header-item/expand.svg);
+  background-size: 140%;
+  height: 20px;
+  width: 18px;
+  left: -25px;
+  top: -3px;
+}
+
+.about__img {
+  left: -16px;
+  position: relative;
+}
+
+/* убираю элементы при меньшем разрешении */
+
+.display-none-768 {
+  display: none;
+}
+
+.paragraph-1120 {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .display-none-768 {
+    display: flex;
+  }
+
+  .about {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .about__main {
+    width: 312px;
+  }
+
+  .about__img img {
+    border-radius: 6px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .header-item {
+    display: flex;
+    gap: 10px;
+  }
+
+  .display-none-768 {
+    display: block;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .nav-info {
+    display: flex;
+  }
+
+  .paragraph-1120 {
+    display: inline;
+  }
+
+  .about {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .about__main {
+    width: 490px;
+  }
+
+  .about__img img {
+    border-radius: 6px;
+    width: 100%;
+  }
+
+  .about__img {
+    width: 531px;
+  }
+
+  .subtitle {
+    gap: 0;
+    flex-wrap: wrap;
+    margin-left: 10px;
+  }
+
+  .subtitle__box {
+    width: auto;
+  }
+
+  .title {
+    margin-left: 10px;
+  }
+
+  .title::before {
+    left: -29px;
+  }
+}
