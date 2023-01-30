@@ -207,7 +207,7 @@ body {
 .read-more__el::before {
   position: absolute;
   content: "";
-  background-image: url(/img/header-item/expand.svg);
+  background-image: url(./img/header-item/expand.svg);
   background-size: 140%;
   height: 20px;
   width: 18px;
