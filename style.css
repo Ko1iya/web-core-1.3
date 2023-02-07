@@ -37,6 +37,10 @@ body {
 
 /* Делаем Хедер */
 
+.header {
+  background: white;
+}
+
 .header__main {
   padding: 0 16px 0 16px;
   border-bottom: 1px solid #d9fff5;
@@ -108,9 +112,9 @@ body {
 }
 
 .title__el {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: nowrap; */
   font-size: 28px;
   min-width: 260px;
 }
