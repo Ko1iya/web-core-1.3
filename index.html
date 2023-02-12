@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-swiper.css" />
     <title>Document</title>
   </head>
   <body>
@@ -151,8 +157,240 @@
             />
           </div>
         </section>
+        <div class="swiper-container">
+          <div class="swiper-title">
+            <p class="swiper-title__text">Ремонт техники различных брендов</p>
+          </div>
+          <div class="brends">
+            <div class="swiper-slide">
+              <a href="#" class="swiper-slide__item">
+                <div class="swiper-slide__img">
+                  <img src="./img/firm/Bitmap.svg" alt="Lenovo" width="auto" />
+                </div>
+                <div class="swiper-slide__but"></div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="swiper-slide__item">
+                <div class="swiper-slide__img">
+                  <img src="./img/firm/Bitmap-1.svg" alt="Bosch" width="100%" />
+                </div>
+                <div class="swiper-slide__but"></div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="swiper-slide__item">
+                <div class="swiper-slide__img">
+                  <img
+                    src="./img/firm/Bitmap-2.svg"
+                    alt="Samsung"
+                    width="100%"
+                  />
+                </div>
+                <div class="swiper-slide__but"></div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="swiper-slide__item">
+                <div class="swiper-slide__img">
+                  <img src="./img/firm/Bitmap-3.svg" alt="HP" width="auto" />
+                </div>
+                <div class="swiper-slide__but"></div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="swiper-slide__item">
+                <div class="swiper-slide__img">
+                  <img src="./img/firm/apple.svg" alt="apple" width="auto" />
+                </div>
+                <div class="swiper-slide__but"></div>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="#" class="swiper-slide__item">
+                <div class="swiper-slide__img">
+                  <img
+                    src="./img/firm/Bitmap-6.svg"
+                    alt="ViewSonic"
+                    width="100%"
+                  />
+                </div>
+                <div class="swiper-slide__but"></div>
+              </a>
+            </div>
+            <!-- раскрываются при 1060рх -->
+            <div
+              class="swiper-slide display-slider-none-768 display-slider-none-read-more"
+            >
+              <a href="#" class="swiper-slide__item">
+                <div class="swiper-slide__img">
+                  <img src="./img/firm/Bitmap-5.svg" alt="Acer" width="100%" />
+                </div>
+                <div class="swiper-slide__but"></div>
+              </a>
+            </div>
+            <div
+              class="swiper-slide display-slider-none-768 display-slider-none-read-more"
+            >
+              <a href="#" class="swiper-slide__item">
+                <div class="swiper-slide__img">
+                  <img src="./img/firm/Bitmap-7.svg" alt="Sony" width="auto" />
+                </div>
+                <div class="swiper-slide__but"></div>
+              </a>
+            </div>
+
+            <div
+              class="swiper-slide display-slider-none-1120 display-slider-none-read-more"
+            >
+              <a href="#" class="swiper-slide__item">
+                <div class="swiper-slide__img">
+                  <img src="./img/firm/Bitmap-5.svg" alt="Acer" width="100%" />
+                </div>
+                <div class="swiper-slide__but"></div>
+              </a>
+            </div>
+            <div
+              class="swiper-slide display-slider-none-1120 display-slider-none-read-more"
+            >
+              <a href="#" class="swiper-slide__item">
+                <div class="swiper-slide__img">
+                  <img src="./img/firm/Bitmap-7.svg" alt="Sony" width="auto" />
+                </div>
+                <div class="swiper-slide__but"></div>
+              </a>
+            </div>
+            <div
+              class="swiper-slide display-slider-none-1120 display-slider-none-read-more"
+            >
+              <a href="#" class="swiper-slide__item">
+                <div class="swiper-slide__img">
+                  <img src="./img/firm/Bitmap-7.svg" alt="Sony" width="auto" />
+                </div>
+                <div class="swiper-slide__but"></div>
+              </a>
+            </div>
+          </div>
+
+          <button
+            class="read-more read-more-none-768 hide-read-more"
+            onclick="hideReadMore('.display-slider-none-read-more', '.hide-read-more' ,'.hide-reade-onclick')"
+          >
+            <p class="read-more__el read-more__el--hide">Скрыть</p>
+          </button>
+
+          <button
+            class="read-more read-more-none-768 hide-reade-onclick"
+            onclick="readMore('.display-slider-none-read-more', '.hide-reade-onclick' ,'.hide-read-more')"
+          >
+            <p class="read-more__el">Показать все</p>
+          </button>
+
+          <!-- Slider main container -->
+          <div class="swiper">
+            <div class="decor-gradient-swiper"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <a href="#" class="swiper-slide__item">
+                  <div class="swiper-slide__img">
+                    <img
+                      src="./img/firm/Bitmap.svg"
+                      alt="Lenovo"
+                      width="auto"
+                    />
+                  </div>
+                  <div class="swiper-slide__but"></div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="swiper-slide__item">
+                  <div class="swiper-slide__img">
+                    <img
+                      src="./img/firm/Bitmap-1.svg"
+                      alt="Bosch"
+                      width="100%"
+                    />
+                  </div>
+                  <div class="swiper-slide__but"></div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="swiper-slide__item">
+                  <div class="swiper-slide__img">
+                    <img
+                      src="./img/firm/Bitmap-2.svg"
+                      alt="Samsung"
+                      width="100%"
+                    />
+                  </div>
+                  <div class="swiper-slide__but"></div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="swiper-slide__item">
+                  <div class="swiper-slide__img">
+                    <img src="./img/firm/Bitmap-3.svg" alt="HP" width="auto" />
+                  </div>
+                  <div class="swiper-slide__but"></div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="swiper-slide__item">
+                  <div class="swiper-slide__img">
+                    <img src="./img/firm/apple.svg" alt="apple" width="auto" />
+                  </div>
+                  <div class="swiper-slide__but"></div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a href="#" class="swiper-slide__item">
+                  <div class="swiper-slide__img">
+                    <img
+                      src="./img/firm/Bitmap-6.svg"
+                      alt="ViewSonic"
+                      width="100%"
+                    />
+                  </div>
+                  <div class="swiper-slide__but"></div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="swiper-slide__item">
+                  <div class="swiper-slide__img">
+                    <img
+                      src="./img/firm/Bitmap-5.svg"
+                      alt="Acer"
+                      width="100%"
+                    />
+                  </div>
+                  <div class="swiper-slide__but"></div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="swiper-slide__item">
+                  <div class="swiper-slide__img">
+                    <img
+                      src="./img/firm/Bitmap-7.svg"
+                      alt="Sony"
+                      width="auto"
+                    />
+                  </div>
+                  <div class="swiper-slide__but"></div>
+                </a>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
       </main>
       <footer></footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/Web core 1.3/scrypt.js"></script>
   </body>
 </html>

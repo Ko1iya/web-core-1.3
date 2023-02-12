@@ -4,6 +4,7 @@ html {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
+  font-size: 16px;
 }
 
 body {
@@ -11,6 +12,7 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   background: #f8f8f8;
+  font-size: 1rem;
 }
 
 h1,
@@ -33,6 +35,10 @@ body {
 .container {
   max-width: 1366px;
   margin: 0 auto;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 /* Делаем Хедер */
@@ -182,6 +188,15 @@ body {
   position: absolute;
 }
 
+.decor-gradient-swiper {
+  background: linear-gradient(90deg, #f8f8f800, #f8f8f8);
+  height: 68px;
+  width: 30px;
+  position: absolute;
+  z-index: 2;
+  right: 14px;
+}
+
 .about {
   display: flex;
   flex-direction: column;
@@ -223,6 +238,18 @@ body {
   width: 18px;
   left: -25px;
   top: -3px;
+}
+
+.read-more__el--hide::before {
+  position: absolute;
+  content: "";
+  background-image: url(./img/header-item/expand.svg);
+  transform: rotate(180deg);
+  background-size: 140%;
+  height: 20px;
+  width: 18px;
+  left: -20px;
+  top: 3px;
 }
 
 .about__img {
