@@ -50,6 +50,7 @@ const swiper = new Swiper(".swiper", {
 //   elementRead.style.display = "none";
 //   elementHideReadMore.style.display = "block";
 // }
+console.log(hi);
 
 function readMore(selector, readMoreItem, hideReadMore) {
   const elementsView = document.querySelectorAll(selector);
