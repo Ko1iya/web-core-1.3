@@ -43,7 +43,7 @@ body {
 
 .swiper-container {
   background-color: #f8f8f8;
-  max-height: 200px;
+  /* max-height: 200px; */
   min-width: 0;
 }
 

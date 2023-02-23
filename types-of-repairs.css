@@ -1,0 +1,67 @@
+.types-of-repairs {
+  display: none;
+}
+
+.types-of-repairs .swiper-slide {
+  height: 160px;
+}
+
+.swiper--type {
+  height: 205px;
+}
+
+.swiper-slide--type {
+  height: 160px;
+}
+
+.swiper-slide__type {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 72px;
+  width: 240px;
+  justify-content: space-around;
+  align-items: center;
+  background: white;
+
+  border-radius: 6px;
+  border: 1px solid rgba(234, 234, 234, 1);
+}
+
+.swiper-slide__type::after {
+  content: "";
+  background: rgba(0, 0, 0, 0) url(./img/header-item/dropdown.svg) center
+    no-repeat;
+  background-size: auto;
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  border: 2px solid rgba(255, 62, 121, 1);
+  border-radius: 50%;
+  left: 180px;
+  top: 100px;
+}
+
+.swiper-slide__type:hover::after {
+  transition: all 1s ease;
+  border: none;
+  background-color: rgba(255, 62, 120, 0.238);
+}
+
+.swiper-slide__type {
+  height: 100%;
+  text-decoration: none;
+  align-items: baseline;
+  color: black;
+}
+
+.display-wrap {
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .types-of-repairs {
+    display: flex;
+    gap: 24px;
+  }
+}
