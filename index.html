@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style-swiper.css" />
+    <link rel="stylesheet" href="types-of-repairs.css" />
     <title>Document</title>
   </head>
   <body>
@@ -273,19 +274,23 @@
             </div>
           </div>
 
-          <button
-            class="read-more read-more-none-768 hide-read-more"
-            onclick="hideReadMore('.display-slider-none-read-more', '.hide-read-more' ,'.hide-reade-onclick')"
-          >
-            <p class="read-more__el read-more__el--hide">Скрыть</p>
-          </button>
+          <div class="read-more-none-768">
+            <button
+              class="read-more read-more-none-768 hide-read-more"
+              onclick="hideReadMoreBrends('.display-slider-none-read-more', '.hide-read-more' ,'.hide-reade-onclick')"
+            >
+              <p class="read-more__el read-more__el--hide">Скрыть</p>
+            </button>
+          </div>
 
-          <button
-            class="read-more read-more-none-768 hide-reade-onclick"
-            onclick="readMore('.display-slider-none-read-more', '.hide-reade-onclick' ,'.hide-read-more')"
-          >
-            <p class="read-more__el">Показать все</p>
-          </button>
+          <div class="read-more-none-768">
+            <button
+              class="read-more read-more-none-768 hide-reade-onclick"
+              onclick="readMoreBrends('.display-slider-none-read-more', '.hide-reade-onclick' ,'.hide-read-more')"
+            >
+              <p class="read-more__el">Показать все</p>
+            </button>
+          </div>
 
           <!-- Slider main container -->
           <div class="swiper">
@@ -378,6 +383,110 @@
                       alt="Sony"
                       width="auto"
                     />
+                  </div>
+                  <div class="swiper-slide__but"></div>
+                </a>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <!-- Виды ремонта ------------------------------>
+        <div class="swiper-container">
+          <div class="swiper-title">
+            <p class="swiper-title__text">Ремонт различных видов техники</p>
+          </div>
+          <div class="types-of-repairs">
+            <div class="swiper-slide swiper-slide--type">
+              <a href="#" class="swiper-slide__type">
+                <div class="">
+                  <p>Ремонт ноутбуков</p>
+                </div>
+                <div class="swiper-slide__but"></div>
+              </a>
+            </div>
+            <div class="swiper-slide swiper-slide--type">
+              <a href="#" class="swiper-slide__type">
+                <div class="">
+                  <p>Ремонт планшетов</p>
+                </div>
+                <div class="swiper-slide__but"></div>
+              </a>
+            </div>
+            <div class="swiper-slide swiper-slide--type">
+              <a href="#" class="swiper-slide__type">
+                <div class="">
+                  <p>Ремонт ПК</p>
+                </div>
+                <div class="swiper-slide__but"></div>
+              </a>
+            </div>
+            <div class="swiper-slide swiper-slide--type">
+              <a href="#" class="swiper-slide__type">
+                <div class="">
+                  <p>Ремонт мониторов</p>
+                </div>
+                <div class="swiper-slide__but"></div>
+              </a>
+            </div>
+
+            <!-- раскрываются при 1060рх (старый ком (скопирован))-->
+          </div>
+
+          <div class="read-more-none-768">
+            <button
+              class="read-more read-more-none-768 hide-reade-onclick button-read-vis"
+              onclick="readMoreTypes()"
+            >
+              <p class="read-more__el">Показать все</p>
+            </button>
+          </div>
+
+          <div class="read-more-none-768">
+            <button
+              class="read-more read-more-none-768 hide-read-more button-read-hid"
+              onclick="hideReadMoreTypes()"
+            >
+              <p class="read-more__el read-more__el--hide">Скрыть</p>
+            </button>
+          </div>
+
+          <!-- Slider main container -->
+          <div class="swiper swiper--type">
+            <div class="decor-gradient-swiper"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide swiper-slide--type">
+                <a href="#" class="swiper-slide__type">
+                  <div class="">
+                    <p>Ремонт ноутбуков</p>
+                  </div>
+                  <div class="swiper-slide__but"></div>
+                </a>
+              </div>
+              <div class="swiper-slide swiper-slide--type">
+                <a href="#" class="swiper-slide__type">
+                  <div class="">
+                    <p>Ремонт планшетов</p>
+                  </div>
+                  <div class="swiper-slide__but"></div>
+                </a>
+              </div>
+              <div class="swiper-slide swiper-slide--type">
+                <a href="#" class="swiper-slide__type">
+                  <div class="">
+                    <p>Ремонт ПК</p>
+                  </div>
+                  <div class="swiper-slide__but"></div>
+                </a>
+              </div>
+              <div class="swiper-slide swiper-slide--type">
+                <a href="#" class="swiper-slide__type">
+                  <div class="">
+                    <p>Ремонт мониторов</p>
                   </div>
                   <div class="swiper-slide__but"></div>
                 </a>
