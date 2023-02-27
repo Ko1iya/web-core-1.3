@@ -10,7 +10,7 @@ html {
 body {
   width: 100%;
   max-width: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   background: #f8f8f8;
   font-size: 1rem;
 }
@@ -20,7 +20,9 @@ h2,
 h3,
 h4,
 h5,
-p {
+p,
+td,
+th {
   font-family: "TT Lakes", sans-serif;
   padding: 0;
   margin: 0;
@@ -101,7 +103,7 @@ button:hover {
   padding-left: 16px;
   padding-right: 16px;
   padding-bottom: 30px;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -283,6 +285,11 @@ button:hover {
 
   .about__img img {
     border-radius: 6px;
+  }
+
+  .main {
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 

@@ -59,6 +59,10 @@
   flex-wrap: wrap;
 }
 
+.decor-gradient--type {
+  height: 100%;
+}
+
 @media (min-width: 768px) {
   .types-of-repairs {
     display: flex;

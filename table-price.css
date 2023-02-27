@@ -1,0 +1,69 @@
+.table-price {
+  font-size: 16px;
+  height: 390px;
+}
+
+.table-price__heder {
+  height: 64px;
+}
+
+.table-price__heder th {
+  text-align: left;
+  font-weight: 400;
+  color: rgba(126, 126, 130, 1);
+}
+
+.table-price__item {
+  width: 100%;
+  height: 64px;
+  background: white;
+  position: relative;
+}
+
+.table-price__item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 95%;
+  height: 1px;
+  background: #eaeaea;
+  right: 23px;
+  top: 63px;
+}
+
+.table-price {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.table-price__button {
+  position: relative;
+  height: 32px;
+  width: 119px;
+  padding: 6px 18px 6px 6px;
+  background: rgba(255, 62, 121, 1);
+  color: white;
+  border: 1px solid rgba(255, 62, 121, 1);
+  font-weight: bold;
+  border-radius: 16px;
+}
+
+.table-price__button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-image: url(./img/table/white-table-botton.svg);
+  background-repeat: no-repeat;
+  top: 10px;
+  right: 10px;
+}
+
+table {
+  border-spacing: 0px;
+}
+
+.table-body {
+  border-radius: 6px;
+}
