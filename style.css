@@ -68,6 +68,11 @@ button:hover {
   align-items: center;
 }
 
+.header-item--hover:hover {
+  transition: all 0.3s ease;
+  opacity: 70%;
+}
+
 .header-item__button {
   width: 40px;
   height: auto;
@@ -102,7 +107,7 @@ button:hover {
   padding-top: 24px;
   padding-left: 16px;
   padding-right: 16px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -225,6 +230,10 @@ button:hover {
   border: none;
 }
 
+.about__main .read-more__el {
+  margin-top: 0;
+}
+
 .read-more__el {
   position: relative;
   margin-left: 24px;
@@ -242,6 +251,14 @@ button:hover {
   top: -3px;
 }
 
+.read-more--hide::before {
+  transform: rotate(77deg);
+}
+
+.vis-read-more {
+  display: none;
+}
+
 .read-more__el--hide::before {
   position: absolute;
   content: "";
@@ -252,6 +269,10 @@ button:hover {
   width: 18px;
   left: -20px;
   top: 3px;
+}
+
+.display-none {
+  display: none;
 }
 
 .about__img {
@@ -350,4 +371,12 @@ button:hover {
   .title::before {
     left: -29px;
   }
+
+  .button-read-none-1120 {
+    display: none;
+  }
+}
+
+.display-about-view-read-more {
+  display: inline;
 }

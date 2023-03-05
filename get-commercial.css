@@ -1,0 +1,23 @@
+.get-commercial {
+  position: relative;
+  border: none;
+  background: none;
+  font-size: 16px;
+}
+
+.get-commercial::before {
+  transition: all 0.3s ease;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 33px;
+  height: 22px;
+  background-image: url(./img/table/red.svg);
+  top: -6px;
+  right: -29px;
+  background-size: 100%;
+}
+
+.get-commercial:hover {
+  opacity: 70%;
+}

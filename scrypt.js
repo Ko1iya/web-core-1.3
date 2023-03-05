@@ -51,17 +51,51 @@ const swiper = new Swiper(".swiper", {
 //   elementHideReadMore.style.display = "block";
 // }
 
-function readMoreBrends(selector, readMoreItem, hideReadMoreBrends) {
+// Эта функция скрытия-раскрытия текста скрытия-раскрытия брендов
+
+function readMoreAbout(selector, readMoreItem, hideReadMoreBrends) {
+  const elementsView = document.querySelectorAll(selector); // елемент над которым проводится манипуляция
+  const elementRead = document.querySelector(readMoreItem); // кнопки
+  const elementHideReadMore = document.querySelector(hideReadMoreBrends); // кнопки
+
+  for (let i = 0; i < elementsView.length; i++) {
+    elementsView[i].classList.add("display-about-view-read-more");
+  }
+
+  // Изменяет вида кнопки за счет того что один вид скрывается, а другоя становится видимым
+
+  elementRead.style.display = "none";
+  elementHideReadMore.style.display = "flex";
+}
+
+function hideReadMoreAbout(selector, readMoreItem, hideReadMoreBrends) {
   const elementsView = document.querySelectorAll(selector);
   const elementRead = document.querySelector(readMoreItem);
   const elementHideReadMore = document.querySelector(hideReadMoreBrends);
 
   for (let i = 0; i < elementsView.length; i++) {
-    elementsView[i].classList.add("display-slider-view-read-more");
+    elementsView[i].classList.remove("display-about-view-read-more");
   }
 
   elementRead.style.display = "none";
-  elementHideReadMore.style.display = "block";
+  elementHideReadMore.style.display = "flex";
+}
+
+// скрытия-раскрытия брендов ----------------
+
+function readMoreBrends(selector, readMoreItem, hideReadMoreBrends) {
+  const elementsView = document.querySelectorAll(selector); // елемент над которым проводится манипуляция
+  const elementRead = document.querySelector(readMoreItem); // кнопки
+  const elementHideReadMore = document.querySelector(hideReadMoreBrends); // кнопки
+
+  for (let i = 0; i < elementsView.length; i++) {
+    elementsView[i].classList.add("display-slider-view-read-more");
+  }
+
+  // Изменяет вида кнопки за счет того что один вид скрывается, а другоя становится видимым
+
+  elementRead.style.display = "none";
+  elementHideReadMore.style.display = "flex";
 }
 
 function hideReadMoreBrends(selector, readMoreItem, hideReadMoreBrends) {
@@ -74,7 +108,7 @@ function hideReadMoreBrends(selector, readMoreItem, hideReadMoreBrends) {
   }
 
   elementRead.style.display = "none";
-  elementHideReadMore.style.display = "block";
+  elementHideReadMore.style.display = "flex";
 }
 
 // Эта функции скрытия типов ремонта

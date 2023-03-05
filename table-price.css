@@ -34,6 +34,7 @@
 .table-price {
   font-weight: 400;
   font-size: 14px;
+  /* border-collapse: collapse; */
 }
 
 .table-price__button {
@@ -52,10 +53,30 @@
   content: "";
   display: block;
   position: absolute;
-  width: 10px;
-  height: 10px;
-  background-image: url(./img/table/white-table-botton.svg);
+  width: 12px;
+  height: 12px;
+  background: url(./img/table/white.svg);
   background-repeat: no-repeat;
+  background-size: 200%;
+  background-position: -10px;
+  top: 10px;
+  right: 10px;
+}
+
+.table-price__button:hover {
+  background: white;
+  color: rgba(255, 62, 121, 1);
+}
+
+.table-price__button:hover::after {
+  transition: all 0.3s ease;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-image: url(./img/table/red.svg);
+
   top: 10px;
   right: 10px;
 }
@@ -64,6 +85,11 @@ table {
   border-spacing: 0px;
 }
 
-.table-body {
+/* .table-body td {
+  border: 1px solid rgba(255, 255, 255, 0);
   border-radius: 6px;
+} */
+
+table td:first-child {
+  padding-left: 24px;
 }

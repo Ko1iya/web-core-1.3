@@ -74,9 +74,9 @@
     display: flex;
     gap: 24px;
   }
-  .swiper-container--price {
+  /* .swiper-container--price {
     margin-top: -20px;
-  }
+  } */
 }
 
 .price .swiper-slide__price {
