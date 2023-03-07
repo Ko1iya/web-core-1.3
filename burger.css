@@ -1,0 +1,135 @@
+/* Делаем гамбургер */
+
+.burger {
+  position: fixed;
+  top: 0px;
+  left: -320px;
+  background-color: rgb(251, 251, 251);
+
+  padding-left: 16px;
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+  height: 100vh;
+  max-height: 1024px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-out;
+}
+
+.burger__header {
+  padding: 0 16px 45px 0px;
+  display: flex;
+  width: auto;
+  height: 88px;
+  gap: 16px;
+  flex-direction: row;
+}
+
+.header-item {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.header-item:hover {
+  opacity: 0.8;
+  transition: all 0.3 linear;
+  cursor: pointer;
+}
+
+.header-item__search {
+  margin-left: auto;
+}
+
+.nav-burger {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  font-size: 16px;
+}
+
+.nav-burger-item {
+  border: none;
+  background: none;
+  display: flex;
+  font-weight: 400;
+}
+
+.nav-burger-item:hover {
+  opacity: 0.5;
+  transition: all 0.3 linear;
+  cursor: pointer;
+}
+
+.nav-burger-item__box {
+  font-size: 1rem;
+}
+
+.nav-burger-item--active {
+  position: relative;
+  color: #7e7e82;
+}
+
+.nav-burger-item--active::before {
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 8px;
+  background: #41f6d7;
+  left: -19px;
+  bottom: -10px;
+  border-radius: 4px;
+}
+
+.burger__footer {
+  margin-top: auto;
+}
+
+.footer-burger {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.footer-burger__navigation {
+  padding-bottom: 16px;
+}
+
+.languages__but {
+  border: none;
+  background: none;
+  font-weight: 400;
+  margin-right: 7px;
+}
+
+.footer-addres__mail {
+  margin-bottom: 12px;
+  font-style: normal;
+  list-style-type: none;
+}
+
+.footer-addres__phone {
+  margin-bottom: 40px;
+  font-style: normal;
+  list-style-type: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.languages__but--active {
+  color: #7e7e82;
+}
+
+.open {
+  transform: translateX(320px); /* положение в видимой части экрана */
+}

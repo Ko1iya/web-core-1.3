@@ -37,6 +37,8 @@ body {
 .container {
   max-width: 1366px;
   margin: 0 auto;
+  /* ------- delete----- */
+  opacity: 0.1;
 }
 
 button:hover {

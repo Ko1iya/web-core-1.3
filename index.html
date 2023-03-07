@@ -17,13 +17,14 @@
     <link rel="stylesheet" href="footer.css" />
     <link rel="stylesheet" href="footer-main.css" />
     <link rel="stylesheet" href="get-commercial.css" />
+    <link rel="stylesheet" href="burger.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="container">
       <header class="header">
         <div class="header__main">
-          <button class="header-item header-item--hover">
+          <button class="header-item header-item--hover" onclick="burgerOpen()">
             <img
               src="./img/header-item/burger.svg"
               alt="меню"
@@ -711,8 +712,98 @@
         </div>
       </footer>
     </div>
+    <div class="burger">
+      <header class="burger__header">
+        <button class="header-item header-item--hover" onclick="burgerOpen()">
+          <img
+            src="./img/header-item/burger-end.svg"
+            alt="меню"
+            class="header-item__button"
+          />
+        </button>
+
+        <button class="header-item header-item--hover">
+          <img
+            src="./img/header-item/Group.svg"
+            alt=""
+            class="header-item__logo"
+          />
+        </button>
+
+        <button class="header-item header-item__search header-item--hover">
+          <img
+            src="./img/header-item/search.svg"
+            alt="меню"
+            class="header-item__button"
+          />
+        </button>
+      </header>
+      <nav class="nav-burger">
+        <button class="nav-burger-item nav-burger-item--active">
+          <p class="nav-burger-item__box">Ремонт техники</p>
+        </button>
+        <button class="nav-burger-item">
+          <p class="nav-burger-item__box">Услуги и сервисы</p>
+        </button>
+        <button class="nav-burger-item">
+          <p class="nav-burger-item__box">Корпоративным клиентам</p>
+        </button>
+        <button class="nav-burger-item">
+          <p class="nav-burger-item__box">Продавцам техники</p>
+        </button>
+        <button class="nav-burger-item">
+          <p class="nav-burger-item__box">Партнерам</p>
+        </button>
+        <button class="nav-burger-item">
+          <p class="nav-burger-item__box">Производителям</p>
+        </button>
+        <button class="nav-burger-item">
+          <p class="nav-burger-item__box">Наши сервисные центры</p>
+        </button>
+        <button class="nav-burger-item">
+          <p class="nav-burger-item__box">Контакты</p>
+        </button>
+      </nav>
+      <footer class="footer-burger burger__footer">
+        <nav class="footer-nav footer-burger__navigation">
+          <button class="header-item">
+            <img
+              src="./img/header-item/chat.svg"
+              alt="Сообщение"
+              class="header-item__button"
+            />
+          </button>
+          <button class="header-item">
+            <img
+              src="./img/header-item/call.svg"
+              alt="Звонок"
+              class="header-item__button"
+            />
+          </button>
+          <button class="header-item">
+            <img
+              src="./img/header-item/profile.svg"
+              alt="Профиль"
+              class="header-item__button"
+            />
+          </button>
+        </nav>
+        <address class="footer-addres">
+          <ul>
+            <li class="footer-addres__mail">mail@cps.com</li>
+            <li class="footer-addres__phone">8 800 890 8900</li>
+          </ul>
+        </address>
+        <div class="languages">
+          <button class="languages__but languages__but--active">RU</button
+          ><button class="languages__but">EN</button
+          ><button class="languages__but">CH</button>
+        </div>
+      </footer>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./scrypt.js"></script>
+    <script src="./burger-open.js"></script>
   </body>
 </html>
