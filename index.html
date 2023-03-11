@@ -21,19 +21,17 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
-      <header class="header">
-        <div class="header__main">
+    <div class="container-site">
+      <div class="burger burger--navigation">
+        <header class="burger__header">
           <button class="header-item header-item--hover" onclick="burgerOpen()">
             <img
-              src="./img/header-item/burger.svg"
+              src="./img/header-item/burger-end.svg"
               alt="меню"
               class="header-item__button"
             />
           </button>
-          <div class="header-decor display-none-768">
-            <div class="header-decor__el"></div>
-          </div>
+
           <button class="header-item">
             <img
               src="./img/header-item/Group.svg"
@@ -42,59 +40,129 @@
             />
           </button>
 
-          <div class="header-decor-block"></div>
-
-          <button class="header-item display-none-768 header-item--hover">
+          <button class="header-item header-item__search header-item--hover">
             <img
-              src="./img/header-item/chat.svg"
-              alt="Сообщение"
+              src="./img/header-item/search.svg"
+              alt="меню"
               class="header-item__button"
             />
           </button>
-          <button class="header-item display-none-768 header-item--hover">
-            <img
-              src="./img/header-item/call.svg"
-              alt="Звонок"
-              class="header-item__button"
-            />
+        </header>
+        <nav class="nav-burger">
+          <button class="nav-burger-item nav-burger-item--active">
+            <p class="nav-burger-item__box">Ремонт техники</p>
           </button>
-          <button class="header-item display-none-768 header-item--hover">
-            <img
-              src="./img/header-item/profile.svg"
-              alt="Профиль"
-              class="header-item__button"
-            />
+          <button class="nav-burger-item">
+            <p class="nav-burger-item__box">Услуги и сервисы</p>
           </button>
-
-          <div class="header-decor">
-            <div class="header-decor__el"></div>
-          </div>
-          <button class="header-item header-item--hover">
-            <img
-              src="./img/header-item/repair.svg"
-              alt="Оставить заявку"
-              class="header-item__button"
-            />
+          <button class="nav-burger-item">
+            <p class="nav-burger-item__box">Корпоративным клиентам</p>
           </button>
-          <button class="header-item header-item--hover">
-            <img
-              src="./img/header-item/checkstatus.svg"
-              alt="Статус ремонта"
-              class="header-item__button"
-            />
+          <button class="nav-burger-item">
+            <p class="nav-burger-item__box">Продавцам техники</p>
           </button>
-        </div>
-      </header>
-      <!-- боковой градиент для затемнения текста -->
-      <div class="decor-gradient"></div>
-      <!-- -------- -->
-      <main class="main">
-        <div class="title">
-          <h1 class="title__el">Услуги и сервисы</h1>
-          <!-- появляется когда разрешение больше 1120 -->
-          <nav class="nav-info">
+          <button class="nav-burger-item">
+            <p class="nav-burger-item__box">Партнерам</p>
+          </button>
+          <button class="nav-burger-item">
+            <p class="nav-burger-item__box">Производителям</p>
+          </button>
+          <button class="nav-burger-item">
+            <p class="nav-burger-item__box">Наши сервисные центры</p>
+          </button>
+          <button class="nav-burger-item">
+            <p class="nav-burger-item__box">Контакты</p>
+          </button>
+        </nav>
+        <footer class="footer-burger burger__footer">
+          <nav class="footer-nav footer-burger__navigation">
             <button class="header-item header-item--hover">
-              <p>Оставить заявку</p>
+              <img
+                src="./img/header-item/chat.svg"
+                alt="Сообщение"
+                class="header-item__button"
+              />
+            </button>
+            <button class="header-item header-item--hover">
+              <img
+                src="./img/header-item/call.svg"
+                alt="Звонок"
+                class="header-item__button"
+              />
+            </button>
+            <button class="header-item header-item--hover">
+              <img
+                src="./img/header-item/profile.svg"
+                alt="Профиль"
+                class="header-item__button"
+              />
+            </button>
+          </nav>
+          <address class="footer-addres">
+            <ul>
+              <li class="footer-addres__mail">mail@cps.com</li>
+              <li class="footer-addres__phone">8 800 890 8900</li>
+            </ul>
+          </address>
+          <div class="languages">
+            <button class="languages__but languages__but--active">RU</button
+            ><button class="languages__but">EN</button
+            ><button class="languages__but">CH</button>
+          </div>
+        </footer>
+      </div>
+      <div class="container">
+        <header class="header">
+          <div class="header__main">
+            <button
+              class="header-item header-item--hover"
+              onclick="burgerOpen()"
+            >
+              <img
+                src="./img/header-item/burger.svg"
+                alt="меню"
+                class="header-item__button"
+              />
+            </button>
+            <div class="header-decor display-none-768">
+              <div class="header-decor__el"></div>
+            </div>
+            <button class="header-item">
+              <img
+                src="./img/header-item/Group.svg"
+                alt=""
+                class="header-item__logo"
+              />
+            </button>
+
+            <div class="header-decor-block"></div>
+
+            <button class="header-item display-none-768 header-item--hover">
+              <img
+                src="./img/header-item/chat.svg"
+                alt="Сообщение"
+                class="header-item__button"
+              />
+            </button>
+            <button class="header-item display-none-768 header-item--hover">
+              <img
+                src="./img/header-item/call.svg"
+                alt="Звонок"
+                class="header-item__button"
+              />
+            </button>
+            <button class="header-item display-none-768 header-item--hover">
+              <img
+                src="./img/header-item/profile.svg"
+                alt="Профиль"
+                class="header-item__button"
+              />
+            </button>
+
+            <div class="header-decor">
+              <div class="header-decor__el"></div>
+            </div>
+            <button class="header-item header-item--hover">
               <img
                 src="./img/header-item/repair.svg"
                 alt="Оставить заявку"
@@ -102,232 +170,122 @@
               />
             </button>
             <button class="header-item header-item--hover">
-              <p>Статус ремонта</p>
               <img
                 src="./img/header-item/checkstatus.svg"
                 alt="Статус ремонта"
                 class="header-item__button"
               />
             </button>
+          </div>
+        </header>
+        <!-- боковой градиент для затемнения текста -->
+        <div class="decor-gradient"></div>
+        <!-- -------- -->
+        <main class="main">
+          <div class="title">
+            <h1 class="title__el">Услуги и сервисы</h1>
+            <!-- появляется когда разрешение больше 1120 -->
+            <nav class="nav-info">
+              <button class="header-item header-item--hover">
+                <p>Оставить заявку</p>
+                <img
+                  src="./img/header-item/repair.svg"
+                  alt="Оставить заявку"
+                  class="header-item__button"
+                />
+              </button>
+              <button class="header-item header-item--hover">
+                <p>Статус ремонта</p>
+                <img
+                  src="./img/header-item/checkstatus.svg"
+                  alt="Статус ремонта"
+                  class="header-item__button"
+                />
+              </button>
+            </nav>
+            <!-- ---------- -->
+          </div>
+          <nav class="subtitle">
+            <button class="subtitle__box subtitle--active">
+              <h2 class="subtitle__item">Ремонтируемые устройства</h2>
+            </button>
+            <button class="subtitle__box">
+              <h2 class="subtitle__item">Дополнительные услуги</h2>
+            </button>
+            <button class="subtitle__box">
+              <h2 class="subtitle__item">Цены на услуги</h2>
+            </button>
+            <button class="subtitle__box">
+              <h2 class="subtitle__item">Адреса сервисных центров</h2>
+            </button>
+            <button class="subtitle__box">
+              <h2 class="subtitle__item">Специальные цены</h2>
+            </button>
+            <button class="subtitle__box">
+              <h2 class="subtitle__item">Отзывы</h2>
+            </button>
           </nav>
-          <!-- ---------- -->
-        </div>
-        <nav class="subtitle">
-          <button class="subtitle__box subtitle--active">
-            <h2 class="subtitle__item">Ремонтируемые устройства</h2>
-          </button>
-          <button class="subtitle__box">
-            <h2 class="subtitle__item">Дополнительные услуги</h2>
-          </button>
-          <button class="subtitle__box">
-            <h2 class="subtitle__item">Цены на услуги</h2>
-          </button>
-          <button class="subtitle__box">
-            <h2 class="subtitle__item">Адреса сервисных центров</h2>
-          </button>
-          <button class="subtitle__box">
-            <h2 class="subtitle__item">Специальные цены</h2>
-          </button>
-          <button class="subtitle__box">
-            <h2 class="subtitle__item">Отзывы</h2>
-          </button>
-        </nav>
 
-        <section class="about">
-          <div class="about__main">
-            <p class="about__item">
-              Мы являемся авторизованным сервисным центром по ремонту техники
-              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
-              официальной гарантией производителя.
-            </p>
+          <section class="about">
+            <div class="about__main">
+              <p class="about__item">
+                Мы являемся авторизованным сервисным центром по ремонту техники
+                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+                официальной гарантией производителя.
+              </p>
 
-            <!-- появляется когда разрешение больше 768 -->
-            <p
-              class="about__item display-none-768 display-about-none-read-more"
-            >
-              Мы успешно работаем с 1992 года и заслужили репутацию надежного
-              партнера
-              <!-- появляется когда разрешение больше 1120 -->
-              <span class="paragraph-1120 display-about-none-read-more"
-                >, что подтверждает большое количество постоянных клиентов. Мы
-                гордимся тем, что к нам обращаются по рекомендациям и, в свою
-                очередь, советуют нас родным и близким. </span
-              ><span class="display-none display-about-none-read-more"
-                >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
-                animi iusto ducimus sint molestias exercitationem nesciunt
-                consequuntur voluptates consequatur tempora?
-              </span>
-            </p>
+              <!-- появляется когда разрешение больше 768 -->
+              <p
+                class="about__item display-none-768 display-about-none-read-more"
+              >
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                партнера
+                <!-- появляется когда разрешение больше 1120 -->
+                <span class="paragraph-1120 display-about-none-read-more"
+                  >, что подтверждает большое количество постоянных клиентов. Мы
+                  гордимся тем, что к нам обращаются по рекомендациям и, в свою
+                  очередь, советуют нас родным и близким. </span
+                ><span class="display-none display-about-none-read-more"
+                  >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Ipsa animi iusto ducimus sint molestias exercitationem
+                  nesciunt consequuntur voluptates consequatur tempora?
+                </span>
+              </p>
 
-            <!--             
+              <!--             
               onclick="hideReadMoreBrends('.display-slider-none-read-more', '.hide-read-more' ,'.hide-reade-onclick')"
 
               display-slider-none-read-more это класс элемента над которым происходит манипуляция - первая кнопка добавляет ему класс с display: block, a вторая его убирает
 
               hide-read-more и .hide-reade-onclick классы для изменения самой кнопки и определения их функциональности. Первый из них показывает, какую кнопку убрать, а второй какую поставить -->
 
-            <button
-              class="read-more hide-reade-more-about"
-              onclick="readMoreAbout('.display-about-none-read-more', '.hide-reade-more-about' ,'.vis-read-more')"
-            >
-              <p class="read-more__el">Читать далее</p>
-            </button>
+              <button
+                class="read-more hide-reade-more-about"
+                onclick="readMoreAbout('.display-about-none-read-more', '.hide-reade-more-about' ,'.vis-read-more')"
+              >
+                <p class="read-more__el">Читать далее</p>
+              </button>
 
-            <button
-              class="read-more vis-read-more"
-              onclick="hideReadMoreAbout('.display-about-none-read-more', '.vis-read-more' ,'.hide-reade-more-about')"
-            >
-              <p class="read-more__el read-more__el--hide">Скрыть</p>
-            </button>
-          </div>
-
-          <div class="about__img">
-            <img
-              src="./img/header-item/photologo.jpg"
-              alt="Табличка сервисного центра"
-            />
-          </div>
-        </section>
-        <div class="swiper-container">
-          <div class="swiper-title">
-            <p class="swiper-title__text">Ремонт техники различных брендов</p>
-          </div>
-          <div class="brends">
-            <div class="swiper-slide">
-              <a href="#" class="swiper-slide__item">
-                <div class="swiper-slide__img">
-                  <img src="./img/firm/Bitmap.svg" alt="Lenovo" width="auto" />
-                </div>
-                <div class="swiper-slide__but"></div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#" class="swiper-slide__item">
-                <div class="swiper-slide__img">
-                  <img src="./img/firm/Bitmap-1.svg" alt="Bosch" width="100%" />
-                </div>
-                <div class="swiper-slide__but"></div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#" class="swiper-slide__item">
-                <div class="swiper-slide__img">
-                  <img
-                    src="./img/firm/Bitmap-2.svg"
-                    alt="Samsung"
-                    width="100%"
-                  />
-                </div>
-                <div class="swiper-slide__but"></div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#" class="swiper-slide__item">
-                <div class="swiper-slide__img">
-                  <img src="./img/firm/Bitmap-3.svg" alt="HP" width="auto" />
-                </div>
-                <div class="swiper-slide__but"></div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#" class="swiper-slide__item">
-                <div class="swiper-slide__img">
-                  <img src="./img/firm/apple.svg" alt="apple" width="auto" />
-                </div>
-                <div class="swiper-slide__but"></div>
-              </a>
+              <button
+                class="read-more vis-read-more"
+                onclick="hideReadMoreAbout('.display-about-none-read-more', '.vis-read-more' ,'.hide-reade-more-about')"
+              >
+                <p class="read-more__el read-more__el--hide">Скрыть</p>
+              </button>
             </div>
 
-            <div class="swiper-slide">
-              <a href="#" class="swiper-slide__item">
-                <div class="swiper-slide__img">
-                  <img
-                    src="./img/firm/Bitmap-6.svg"
-                    alt="ViewSonic"
-                    width="100%"
-                  />
-                </div>
-                <div class="swiper-slide__but"></div>
-              </a>
+            <div class="about__img">
+              <img
+                src="./img/header-item/photologo.jpg"
+                alt="Табличка сервисного центра"
+              />
             </div>
-            <!-- раскрываются при 1060рх -->
-            <div
-              class="swiper-slide display-slider-none-768 display-slider-none-read-more"
-            >
-              <a href="#" class="swiper-slide__item">
-                <div class="swiper-slide__img">
-                  <img src="./img/firm/Bitmap-5.svg" alt="Acer" width="100%" />
-                </div>
-                <div class="swiper-slide__but"></div>
-              </a>
+          </section>
+          <div class="swiper-container">
+            <div class="swiper-title">
+              <p class="swiper-title__text">Ремонт техники различных брендов</p>
             </div>
-            <div
-              class="swiper-slide display-slider-none-768 display-slider-none-read-more"
-            >
-              <a href="#" class="swiper-slide__item">
-                <div class="swiper-slide__img">
-                  <img src="./img/firm/Bitmap-7.svg" alt="Sony" width="auto" />
-                </div>
-                <div class="swiper-slide__but"></div>
-              </a>
-            </div>
-
-            <div
-              class="swiper-slide display-slider-none-1120 display-slider-none-read-more"
-            >
-              <a href="#" class="swiper-slide__item">
-                <div class="swiper-slide__img">
-                  <img src="./img/firm/Bitmap-5.svg" alt="Acer" width="100%" />
-                </div>
-                <div class="swiper-slide__but"></div>
-              </a>
-            </div>
-            <div
-              class="swiper-slide display-slider-none-1120 display-slider-none-read-more"
-            >
-              <a href="#" class="swiper-slide__item">
-                <div class="swiper-slide__img">
-                  <img src="./img/firm/Bitmap-7.svg" alt="Sony" width="auto" />
-                </div>
-                <div class="swiper-slide__but"></div>
-              </a>
-            </div>
-            <div
-              class="swiper-slide display-slider-none-1120 display-slider-none-read-more"
-            >
-              <a href="#" class="swiper-slide__item">
-                <div class="swiper-slide__img">
-                  <img src="./img/firm/Bitmap-7.svg" alt="Sony" width="auto" />
-                </div>
-                <div class="swiper-slide__but"></div>
-              </a>
-            </div>
-          </div>
-
-          <div class="read-more-none-768">
-            <button
-              class="read-more read-more-none-768 hide-read-more"
-              onclick="hideReadMoreBrends('.display-slider-none-read-more', '.hide-read-more' ,'.hide-reade-onclick')"
-            >
-              <p class="read-more__el read-more__el--hide">Скрыть</p>
-            </button>
-          </div>
-
-          <div class="read-more-none-768">
-            <button
-              class="read-more read-more-none-768 hide-reade-onclick"
-              onclick="readMoreBrends('.display-slider-none-read-more', '.hide-reade-onclick' ,'.hide-read-more')"
-            >
-              <p class="read-more__el">Показать все</p>
-            </button>
-          </div>
-
-          <!-- Slider main container -->
-          <div class="swiper">
-            <div class="decor-gradient-swiper"></div>
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
+            <div class="brends">
               <div class="swiper-slide">
                 <a href="#" class="swiper-slide__item">
                   <div class="swiper-slide__img">
@@ -393,7 +351,10 @@
                   <div class="swiper-slide__but"></div>
                 </a>
               </div>
-              <div class="swiper-slide">
+              <!-- раскрываются при 1060рх -->
+              <div
+                class="swiper-slide display-slider-none-768 display-slider-none-read-more"
+              >
                 <a href="#" class="swiper-slide__item">
                   <div class="swiper-slide__img">
                     <img
@@ -405,7 +366,52 @@
                   <div class="swiper-slide__but"></div>
                 </a>
               </div>
-              <div class="swiper-slide">
+              <div
+                class="swiper-slide display-slider-none-768 display-slider-none-read-more"
+              >
+                <a href="#" class="swiper-slide__item">
+                  <div class="swiper-slide__img">
+                    <img
+                      src="./img/firm/Bitmap-7.svg"
+                      alt="Sony"
+                      width="auto"
+                    />
+                  </div>
+                  <div class="swiper-slide__but"></div>
+                </a>
+              </div>
+
+              <div
+                class="swiper-slide display-slider-none-1120 display-slider-none-read-more"
+              >
+                <a href="#" class="swiper-slide__item">
+                  <div class="swiper-slide__img">
+                    <img
+                      src="./img/firm/Bitmap-5.svg"
+                      alt="Acer"
+                      width="100%"
+                    />
+                  </div>
+                  <div class="swiper-slide__but"></div>
+                </a>
+              </div>
+              <div
+                class="swiper-slide display-slider-none-1120 display-slider-none-read-more"
+              >
+                <a href="#" class="swiper-slide__item">
+                  <div class="swiper-slide__img">
+                    <img
+                      src="./img/firm/Bitmap-7.svg"
+                      alt="Sony"
+                      width="auto"
+                    />
+                  </div>
+                  <div class="swiper-slide__but"></div>
+                </a>
+              </div>
+              <div
+                class="swiper-slide display-slider-none-1120 display-slider-none-read-more"
+              >
                 <a href="#" class="swiper-slide__item">
                   <div class="swiper-slide__img">
                     <img
@@ -418,77 +424,140 @@
                 </a>
               </div>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
 
-        <!-- Виды ремонта ------------------------------>
-        <div class="swiper-container">
-          <div class="swiper-title">
-            <p class="swiper-title__text">Ремонт различных видов техники</p>
-          </div>
-          <div class="types-of-repairs">
-            <div class="swiper-slide swiper-slide--type">
-              <a href="#" class="swiper-slide__type">
-                <div class="">
-                  <p>Ремонт ноутбуков</p>
-                </div>
-                <div class="swiper-slide__but"></div>
-              </a>
-            </div>
-            <div class="swiper-slide swiper-slide--type">
-              <a href="#" class="swiper-slide__type">
-                <div class="">
-                  <p>Ремонт планшетов</p>
-                </div>
-                <div class="swiper-slide__but"></div>
-              </a>
-            </div>
-            <div class="swiper-slide swiper-slide--type">
-              <a href="#" class="swiper-slide__type">
-                <div class="">
-                  <p>Ремонт ПК</p>
-                </div>
-                <div class="swiper-slide__but"></div>
-              </a>
-            </div>
-            <div class="swiper-slide swiper-slide--type">
-              <a href="#" class="swiper-slide__type">
-                <div class="">
-                  <p>Ремонт мониторов</p>
-                </div>
-                <div class="swiper-slide__but"></div>
-              </a>
+            <div class="read-more-none-768">
+              <button
+                class="read-more read-more-none-768 hide-read-more"
+                onclick="hideReadMoreBrends('.display-slider-none-read-more', '.hide-read-more' ,'.hide-reade-onclick')"
+              >
+                <p class="read-more__el read-more__el--hide">Скрыть</p>
+              </button>
             </div>
 
-            <!-- раскрываются при 1060рх (старый ком (скопирован))-->
+            <div class="read-more-none-768">
+              <button
+                class="read-more read-more-none-768 hide-reade-onclick"
+                onclick="readMoreBrends('.display-slider-none-read-more', '.hide-reade-onclick' ,'.hide-read-more')"
+              >
+                <p class="read-more__el">Показать все</p>
+              </button>
+            </div>
+
+            <!-- Slider main container -->
+            <div class="swiper">
+              <div class="decor-gradient-swiper"></div>
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <a href="#" class="swiper-slide__item">
+                    <div class="swiper-slide__img">
+                      <img
+                        src="./img/firm/Bitmap.svg"
+                        alt="Lenovo"
+                        width="auto"
+                      />
+                    </div>
+                    <div class="swiper-slide__but"></div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="swiper-slide__item">
+                    <div class="swiper-slide__img">
+                      <img
+                        src="./img/firm/Bitmap-1.svg"
+                        alt="Bosch"
+                        width="100%"
+                      />
+                    </div>
+                    <div class="swiper-slide__but"></div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="swiper-slide__item">
+                    <div class="swiper-slide__img">
+                      <img
+                        src="./img/firm/Bitmap-2.svg"
+                        alt="Samsung"
+                        width="100%"
+                      />
+                    </div>
+                    <div class="swiper-slide__but"></div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="swiper-slide__item">
+                    <div class="swiper-slide__img">
+                      <img
+                        src="./img/firm/Bitmap-3.svg"
+                        alt="HP"
+                        width="auto"
+                      />
+                    </div>
+                    <div class="swiper-slide__but"></div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="swiper-slide__item">
+                    <div class="swiper-slide__img">
+                      <img
+                        src="./img/firm/apple.svg"
+                        alt="apple"
+                        width="auto"
+                      />
+                    </div>
+                    <div class="swiper-slide__but"></div>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="#" class="swiper-slide__item">
+                    <div class="swiper-slide__img">
+                      <img
+                        src="./img/firm/Bitmap-6.svg"
+                        alt="ViewSonic"
+                        width="100%"
+                      />
+                    </div>
+                    <div class="swiper-slide__but"></div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="swiper-slide__item">
+                    <div class="swiper-slide__img">
+                      <img
+                        src="./img/firm/Bitmap-5.svg"
+                        alt="Acer"
+                        width="100%"
+                      />
+                    </div>
+                    <div class="swiper-slide__but"></div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="swiper-slide__item">
+                    <div class="swiper-slide__img">
+                      <img
+                        src="./img/firm/Bitmap-7.svg"
+                        alt="Sony"
+                        width="auto"
+                      />
+                    </div>
+                    <div class="swiper-slide__but"></div>
+                  </a>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
 
-          <div class="read-more-none-768 button-read-none-1120">
-            <button
-              class="read-more read-more-none-768 hide-reade-onclick button-read-vis"
-              onclick="readMoreTypes()"
-            >
-              <p class="read-more__el">Показать все</p>
-            </button>
-          </div>
-
-          <div class="read-more-none-768">
-            <button
-              class="read-more read-more-none-768 hide-read-more button-read-hid"
-              onclick="hideReadMoreTypes()"
-            >
-              <p class="read-more__el read-more__el--hide">Скрыть</p>
-            </button>
-          </div>
-
-          <!-- Slider main container -->
-          <div class="swiper swiper--type">
-            <div class="decor-gradient-swiper decor-gradient--type"></div>
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
+          <!-- Виды ремонта ------------------------------>
+          <div class="swiper-container">
+            <div class="swiper-title">
+              <p class="swiper-title__text">Ремонт различных видов техники</p>
+            </div>
+            <div class="types-of-repairs">
               <div class="swiper-slide swiper-slide--type">
                 <a href="#" class="swiper-slide__type">
                   <div class="">
@@ -521,289 +590,358 @@
                   <div class="swiper-slide__but"></div>
                 </a>
               </div>
+
+              <!-- раскрываются при 1060рх (старый ком (скопирован))-->
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-        <!-- цены на услуги--------------------- -->
-        <div class="swiper-container swiper-container--price">
-          <div class="swiper-title">
-            <p class="swiper-title__text">цены на услуги</p>
-          </div>
-          <div class="price">
-            <table class="table-price">
-              <thead>
-                <tr class="table-price__heder">
-                  <th>Ремонтные услуги</th>
-                  <th>Цена</th>
-                  <th>Срок</th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody class="table-body">
-                <tr class="table-price__item">
-                  <td>Диагностика</td>
-                  <td>Бесплатно</td>
-                  <td>30 мин</td>
-                  <td><button class="table-price__button">Заказать</button></td>
-                </tr>
-                <tr class="table-price__item">
-                  <td>Замена дисплея</td>
-                  <td>1 000 ₽</td>
-                  <td>30-120 мин</td>
-                  <td>
-                    <button class="table-price__button">Заказать</button>
-                  </td>
-                </tr>
-                <tr class="table-price__item">
-                  <td>Замена полифонического динамика</td>
-                  <td>1 000 ₽</td>
-                  <td>30-120 мин</td>
-                  <td><button class="table-price__button">Заказать</button></td>
-                </tr>
-                <tr class="table-price__item">
-                  <td>Тестирование с выдачей технического заключения</td>
-                  <td>1 000 ₽</td>
-                  <td>30-120 мин</td>
-                  <td><button class="table-price__button">Заказать</button></td>
-                </tr>
-                <tr class="table-price__item">
-                  <td>Замена программного обеспечения</td>
-                  <td>1 000 ₽</td>
-                  <td>30-120 мин</td>
-                  <td><button class="table-price__button">Заказать</button></td>
-                </tr>
-              </tbody>
-            </table>
-            <!-- раскрываются при 1060рх (старый ком (скопирован))-->
-          </div>
 
-          <!-- Slider main container -->
-          <div class="swiper swiper--price">
-            <div class="decor-gradient-swiper decor-gradient--type"></div>
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide swiper-slide--price">
-                <a href="#" class="swiper-slide__price">
-                  <div>
-                    <p><span> Ремонтные услуги</span></p>
-                    <p>Тестирование с выдачей технического заключения</p>
-                  </div>
-
-                  <div>
-                    <p><span>Цена</span></p>
-                    <p>Бесплатно</p>
-                  </div>
-
-                  <div>
-                    <p><span>Срок</span></p>
-                    <p>30-120 мин</p>
-                  </div>
-
-                  <div class="swiper-slide__but"></div>
-                </a>
-              </div>
-              <div class="swiper-slide swiper-slide--price">
-                <a href="#" class="swiper-slide__price">
-                  <div>
-                    <p><span> Ремонтные услуги</span></p>
-                    <p>Диагностика</p>
-                  </div>
-
-                  <div>
-                    <p><span>Цена</span></p>
-                    <p>Бесплатно</p>
-                  </div>
-
-                  <div>
-                    <p><span>Срок</span></p>
-                    <p>30 мин</p>
-                  </div>
-                  <div class="swiper-slide__but"></div>
-                </a>
-              </div>
-              <div class="swiper-slide swiper-slide--price">
-                <a href="#" class="swiper-slide__price">
-                  <div>
-                    <p><span> Ремонтные услуги</span></p>
-                    <p>Замена дисплея</p>
-                  </div>
-
-                  <div>
-                    <p><span>Цена</span></p>
-                    <p>1000 р</p>
-                  </div>
-
-                  <div>
-                    <p><span>Срок</span></p>
-                    <p>30-120 мин</p>
-                  </div>
-                  <div class="swiper-slide__but"></div>
-                </a>
-              </div>
-              <div class="swiper-slide swiper-slide--price">
-                <a href="#" class="swiper-slide__price">
-                  <div>
-                    <p><span> Ремонтные услуги</span></p>
-                    <p>Замена полифонического динамика</p>
-                  </div>
-
-                  <div>
-                    <p><span>Цена</span></p>
-                    <p>1000 р</p>
-                  </div>
-
-                  <div>
-                    <p><span>Срок</span></p>
-                    <p>30-120 мин</p>
-                  </div>
-                  <div class="swiper-slide__but"></div>
-                </a>
-              </div>
-              <div class="swiper-slide swiper-slide--price">
-                <a href="#" class="swiper-slide__price">
-                  <div>
-                    <p><span> Ремонтные услуги</span></p>
-                    <p>Замена программного обеспечения</p>
-                  </div>
-
-                  <div>
-                    <p><span>Цена</span></p>
-                    <p>1000 р</p>
-                  </div>
-
-                  <div>
-                    <p><span>Срок</span></p>
-                    <p>30-120 мин</p>
-                  </div>
-                  <div class="swiper-slide__but"></div>
-                </a>
-              </div>
+            <div class="read-more-none-768 button-read-none-1120">
+              <button
+                class="read-more read-more-none-768 hide-reade-onclick button-read-vis"
+                onclick="readMoreTypes()"
+              >
+                <p class="read-more__el">Показать все</p>
+              </button>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-          </div>
-          <p class="footer-main footer-main__el">
-            Все цены указаны с учетом НДС. Стоимость ремонта указана на
-            единичную услугу. Для получения коммерческого предложения на
-            постоянное обслуживание, оставьте заявку.
-          </p>
 
-          <button class="get-commercial">
-            Получить коммерческое предложение
-          </button>
-        </div>
-      </main>
-      <footer class="footer">
-        <div class="decor-footer"></div>
-        <div class="footer__container">
-          <div class="footer__item">
-            <p>© 2019 CPS Разработано командой Apesong</p>
+            <div class="read-more-none-768">
+              <button
+                class="read-more read-more-none-768 hide-read-more button-read-hid"
+                onclick="hideReadMoreTypes()"
+              >
+                <p class="read-more__el read-more__el--hide">Скрыть</p>
+              </button>
+            </div>
+
+            <!-- Slider main container -->
+            <div class="swiper swiper--type">
+              <div class="decor-gradient-swiper decor-gradient--type"></div>
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide swiper-slide--type">
+                  <a href="#" class="swiper-slide__type">
+                    <div class="">
+                      <p>Ремонт ноутбуков</p>
+                    </div>
+                    <div class="swiper-slide__but"></div>
+                  </a>
+                </div>
+                <div class="swiper-slide swiper-slide--type">
+                  <a href="#" class="swiper-slide__type">
+                    <div class="">
+                      <p>Ремонт планшетов</p>
+                    </div>
+                    <div class="swiper-slide__but"></div>
+                  </a>
+                </div>
+                <div class="swiper-slide swiper-slide--type">
+                  <a href="#" class="swiper-slide__type">
+                    <div class="">
+                      <p>Ремонт ПК</p>
+                    </div>
+                    <div class="swiper-slide__but"></div>
+                  </a>
+                </div>
+                <div class="swiper-slide swiper-slide--type">
+                  <a href="#" class="swiper-slide__type">
+                    <div class="">
+                      <p>Ремонт мониторов</p>
+                    </div>
+                    <div class="swiper-slide__but"></div>
+                  </a>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
-          <div class="footer__item"><p>Политика конфиденциальности</p></div>
-          <div class="footer__item">
-            <p>
-              Информация, размещенная на данной странице, не является публичной
-              офертой
+          <!-- цены на услуги--------------------- -->
+          <div class="swiper-container swiper-container--price">
+            <div class="swiper-title">
+              <p class="swiper-title__text">цены на услуги</p>
+            </div>
+            <div class="price">
+              <table class="table-price">
+                <thead>
+                  <tr class="table-price__heder">
+                    <th>Ремонтные услуги</th>
+                    <th>Цена</th>
+                    <th>Срок</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody class="table-body">
+                  <tr class="table-price__item">
+                    <td>Диагностика</td>
+                    <td>Бесплатно</td>
+                    <td>30 мин</td>
+                    <td>
+                      <button class="table-price__button">Заказать</button>
+                    </td>
+                  </tr>
+                  <tr class="table-price__item">
+                    <td>Замена дисплея</td>
+                    <td>1 000 ₽</td>
+                    <td>30-120 мин</td>
+                    <td>
+                      <button class="table-price__button">Заказать</button>
+                    </td>
+                  </tr>
+                  <tr class="table-price__item">
+                    <td>Замена полифонического динамика</td>
+                    <td>1 000 ₽</td>
+                    <td>30-120 мин</td>
+                    <td>
+                      <button class="table-price__button">Заказать</button>
+                    </td>
+                  </tr>
+                  <tr class="table-price__item">
+                    <td>Тестирование с выдачей технического заключения</td>
+                    <td>1 000 ₽</td>
+                    <td>30-120 мин</td>
+                    <td>
+                      <button class="table-price__button">Заказать</button>
+                    </td>
+                  </tr>
+                  <tr class="table-price__item">
+                    <td>Замена программного обеспечения</td>
+                    <td>1 000 ₽</td>
+                    <td>30-120 мин</td>
+                    <td>
+                      <button class="table-price__button">Заказать</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- раскрываются при 1060рх (старый ком (скопирован))-->
+            </div>
+
+            <!-- Slider main container -->
+            <div class="swiper swiper--price">
+              <div class="decor-gradient-swiper decor-gradient--type"></div>
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide swiper-slide--price">
+                  <a href="#" class="swiper-slide__price">
+                    <div>
+                      <p><span> Ремонтные услуги</span></p>
+                      <p>Тестирование с выдачей технического заключения</p>
+                    </div>
+
+                    <div>
+                      <p><span>Цена</span></p>
+                      <p>Бесплатно</p>
+                    </div>
+
+                    <div>
+                      <p><span>Срок</span></p>
+                      <p>30-120 мин</p>
+                    </div>
+
+                    <div class="swiper-slide__but"></div>
+                  </a>
+                </div>
+                <div class="swiper-slide swiper-slide--price">
+                  <a href="#" class="swiper-slide__price">
+                    <div>
+                      <p><span> Ремонтные услуги</span></p>
+                      <p>Диагностика</p>
+                    </div>
+
+                    <div>
+                      <p><span>Цена</span></p>
+                      <p>Бесплатно</p>
+                    </div>
+
+                    <div>
+                      <p><span>Срок</span></p>
+                      <p>30 мин</p>
+                    </div>
+                    <div class="swiper-slide__but"></div>
+                  </a>
+                </div>
+                <div class="swiper-slide swiper-slide--price">
+                  <a href="#" class="swiper-slide__price">
+                    <div>
+                      <p><span> Ремонтные услуги</span></p>
+                      <p>Замена дисплея</p>
+                    </div>
+
+                    <div>
+                      <p><span>Цена</span></p>
+                      <p>1000 р</p>
+                    </div>
+
+                    <div>
+                      <p><span>Срок</span></p>
+                      <p>30-120 мин</p>
+                    </div>
+                    <div class="swiper-slide__but"></div>
+                  </a>
+                </div>
+                <div class="swiper-slide swiper-slide--price">
+                  <a href="#" class="swiper-slide__price">
+                    <div>
+                      <p><span> Ремонтные услуги</span></p>
+                      <p>Замена полифонического динамика</p>
+                    </div>
+
+                    <div>
+                      <p><span>Цена</span></p>
+                      <p>1000 р</p>
+                    </div>
+
+                    <div>
+                      <p><span>Срок</span></p>
+                      <p>30-120 мин</p>
+                    </div>
+                    <div class="swiper-slide__but"></div>
+                  </a>
+                </div>
+                <div class="swiper-slide swiper-slide--price">
+                  <a href="#" class="swiper-slide__price">
+                    <div>
+                      <p><span> Ремонтные услуги</span></p>
+                      <p>Замена программного обеспечения</p>
+                    </div>
+
+                    <div>
+                      <p><span>Цена</span></p>
+                      <p>1000 р</p>
+                    </div>
+
+                    <div>
+                      <p><span>Срок</span></p>
+                      <p>30-120 мин</p>
+                    </div>
+                    <div class="swiper-slide__but"></div>
+                  </a>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+            <p class="footer-main footer-main__el">
+              Все цены указаны с учетом НДС. Стоимость ремонта указана на
+              единичную услугу. Для получения коммерческого предложения на
+              постоянное обслуживание, оставьте заявку.
             </p>
+
+            <button class="get-commercial">
+              Получить коммерческое предложение
+            </button>
           </div>
-        </div>
-      </footer>
-    </div>
-    <div class="burger">
-      <header class="burger__header">
-        <button class="header-item header-item--hover" onclick="burgerOpen()">
-          <img
-            src="./img/header-item/burger-end.svg"
-            alt="меню"
-            class="header-item__button"
-          />
-        </button>
-
-        <button class="header-item header-item--hover">
-          <img
-            src="./img/header-item/Group.svg"
-            alt=""
-            class="header-item__logo"
-          />
-        </button>
-
-        <button class="header-item header-item__search header-item--hover">
-          <img
-            src="./img/header-item/search.svg"
-            alt="меню"
-            class="header-item__button"
-          />
-        </button>
-      </header>
-      <nav class="nav-burger">
-        <button class="nav-burger-item nav-burger-item--active">
-          <p class="nav-burger-item__box">Ремонт техники</p>
-        </button>
-        <button class="nav-burger-item">
-          <p class="nav-burger-item__box">Услуги и сервисы</p>
-        </button>
-        <button class="nav-burger-item">
-          <p class="nav-burger-item__box">Корпоративным клиентам</p>
-        </button>
-        <button class="nav-burger-item">
-          <p class="nav-burger-item__box">Продавцам техники</p>
-        </button>
-        <button class="nav-burger-item">
-          <p class="nav-burger-item__box">Партнерам</p>
-        </button>
-        <button class="nav-burger-item">
-          <p class="nav-burger-item__box">Производителям</p>
-        </button>
-        <button class="nav-burger-item">
-          <p class="nav-burger-item__box">Наши сервисные центры</p>
-        </button>
-        <button class="nav-burger-item">
-          <p class="nav-burger-item__box">Контакты</p>
-        </button>
-      </nav>
-      <footer class="footer-burger burger__footer">
-        <nav class="footer-nav footer-burger__navigation">
-          <button class="header-item">
+        </main>
+        <footer class="footer">
+          <div class="decor-footer"></div>
+          <div class="footer__container">
+            <div class="footer__item">
+              <p>© 2019 CPS Разработано командой Apesong</p>
+            </div>
+            <div class="footer__item"><p>Политика конфиденциальности</p></div>
+            <div class="footer__item">
+              <p>
+                Информация, размещенная на данной странице, не является
+                публичной офертой
+              </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <div class="burger" id="burger">
+        <header class="burger__header">
+          <button class="header-item header-item--hover" onclick="burgerOpen()">
             <img
-              src="./img/header-item/chat.svg"
-              alt="Сообщение"
+              src="./img/header-item/burger-end.svg"
+              alt="меню"
               class="header-item__button"
             />
           </button>
+
           <button class="header-item">
             <img
-              src="./img/header-item/call.svg"
-              alt="Звонок"
+              src="./img/header-item/Group.svg"
+              alt=""
+              class="header-item__logo"
+            />
+          </button>
+
+          <button class="header-item header-item__search header-item--hover">
+            <img
+              src="./img/header-item/search.svg"
+              alt="меню"
               class="header-item__button"
             />
           </button>
-          <button class="header-item">
-            <img
-              src="./img/header-item/profile.svg"
-              alt="Профиль"
-              class="header-item__button"
-            />
+        </header>
+        <nav class="nav-burger">
+          <button class="nav-burger-item nav-burger-item--active">
+            <p class="nav-burger-item__box">Ремонт техники</p>
+          </button>
+          <button class="nav-burger-item">
+            <p class="nav-burger-item__box">Услуги и сервисы</p>
+          </button>
+          <button class="nav-burger-item">
+            <p class="nav-burger-item__box">Корпоративным клиентам</p>
+          </button>
+          <button class="nav-burger-item">
+            <p class="nav-burger-item__box">Продавцам техники</p>
+          </button>
+          <button class="nav-burger-item">
+            <p class="nav-burger-item__box">Партнерам</p>
+          </button>
+          <button class="nav-burger-item">
+            <p class="nav-burger-item__box">Производителям</p>
+          </button>
+          <button class="nav-burger-item">
+            <p class="nav-burger-item__box">Наши сервисные центры</p>
+          </button>
+          <button class="nav-burger-item">
+            <p class="nav-burger-item__box">Контакты</p>
           </button>
         </nav>
-        <address class="footer-addres">
-          <ul>
-            <li class="footer-addres__mail">mail@cps.com</li>
-            <li class="footer-addres__phone">8 800 890 8900</li>
-          </ul>
-        </address>
-        <div class="languages">
-          <button class="languages__but languages__but--active">RU</button
-          ><button class="languages__but">EN</button
-          ><button class="languages__but">CH</button>
-        </div>
-      </footer>
+        <footer class="footer-burger burger__footer">
+          <nav class="footer-nav footer-burger__navigation">
+            <button class="header-item header-item--hover">
+              <img
+                src="./img/header-item/chat.svg"
+                alt="Сообщение"
+                class="header-item__button"
+              />
+            </button>
+            <button class="header-item header-item--hover">
+              <img
+                src="./img/header-item/call.svg"
+                alt="Звонок"
+                class="header-item__button"
+              />
+            </button>
+            <button class="header-item header-item--hover">
+              <img
+                src="./img/header-item/profile.svg"
+                alt="Профиль"
+                class="header-item__button"
+              />
+            </button>
+          </nav>
+          <address class="footer-addres">
+            <ul>
+              <li class="footer-addres__mail">mail@cps.com</li>
+              <li class="footer-addres__phone">8 800 890 8900</li>
+            </ul>
+          </address>
+          <div class="languages">
+            <button class="languages__but languages__but--active">RU</button
+            ><button class="languages__but">EN</button
+            ><button class="languages__but">CH</button>
+          </div>
+        </footer>
+      </div>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./scrypt.js"></script>
     <script src="./burger-open.js"></script>
+    <script src="./subtitle-active.js"></script>
   </body>
 </html>
