@@ -1,7 +1,7 @@
 /* Делаем гамбургер */
 
 .burger {
-  position: fixed;
+  position: absolute;
   top: 0px;
   left: -320px;
   background-color: rgb(251, 251, 251);
@@ -14,6 +14,7 @@
   box-sizing: border-box;
   /* border: 1px solid black; */
   height: 100vh;
+  min-height: 750px;
   max-height: 1024px;
 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -29,18 +30,18 @@
   flex-direction: row;
 }
 
-.header-item {
+/* .header-item {
   background: none;
   border: none;
   display: flex;
   align-items: center;
-}
+} */
 
-.header-item:hover {
+/* .header-item:hover {
   opacity: 0.8;
   transition: all 0.3 linear;
   cursor: pointer;
-}
+} */
 
 .header-item__search {
   margin-left: auto;
@@ -132,4 +133,30 @@
 
 .open {
   transform: translateX(320px); /* положение в видимой части экрана */
+}
+
+.burger--navigation {
+  display: none;
+}
+
+@media (min-width: 1120px) {
+  .burger--navigation {
+    display: flex;
+    position: sticky;
+    left: 0;
+    top: 0;
+    box-shadow: none;
+    min-height: 100vh;
+  }
+
+  .container {
+    width: calc(100vw - 320px);
+  }
+
+  .container-site {
+    display: flex;
+    flex-direction: row;
+    max-width: 1686px;
+    margin: 0 auto;
+  }
 }

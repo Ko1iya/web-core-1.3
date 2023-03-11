@@ -1,29 +1,31 @@
-const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  direction: "horizontal",
-  loop: true,
+if (window.innerWidth < 768) {
+  const swiper = new Swiper(".swiper", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
 
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
 
-  //   // Navigation arrows
-  //   navigation: {
-  //     nextEl: ".swiper-button-next",
-  //     prevEl: ".swiper-button-prev",
-  //   },
+    //   // Navigation arrows
+    //   navigation: {
+    //     nextEl: ".swiper-button-next",
+    //     prevEl: ".swiper-button-prev",
+    //   },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
+    // And if we need scrollbar
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
 
-  slidesPerView: "auto",
+    slidesPerView: "auto",
 
-  spaceBetween: 16,
-});
+    spaceBetween: 16,
+  });
+}
 
 // function readMoreBrends(selector, readMoreItem, hideReadMoreBrends) {
 //   const elementsView = document.querySelectorAll(selector);
