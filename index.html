@@ -24,14 +24,6 @@
     <div class="container-site">
       <div class="burger burger--navigation">
         <header class="burger__header">
-          <button class="header-item header-item--hover" onclick="burgerOpen()">
-            <img
-              src="./img/header-item/burger-end.svg"
-              alt="меню"
-              class="header-item__button"
-            />
-          </button>
-
           <button class="header-item">
             <img
               src="./img/header-item/Group.svg"
@@ -49,28 +41,60 @@
           </button>
         </header>
         <nav class="nav-burger">
-          <button class="nav-burger-item nav-burger-item--active">
+          <button
+            class="nav-burger-item nav-burger-item--active"
+            onclick="activeBurgerBut('buttonBur1')"
+            id="buttonBur1"
+          >
             <p class="nav-burger-item__box">Ремонт техники</p>
           </button>
-          <button class="nav-burger-item">
+          <button
+            class="nav-burger-item"
+            onclick="activeBurgerBut('buttonBur2')"
+            id="buttonBur2"
+          >
             <p class="nav-burger-item__box">Услуги и сервисы</p>
           </button>
-          <button class="nav-burger-item">
+          <button
+            class="nav-burger-item"
+            onclick="activeBurgerBut('buttonBur3')"
+            id="buttonBur3"
+          >
             <p class="nav-burger-item__box">Корпоративным клиентам</p>
           </button>
-          <button class="nav-burger-item">
+          <button
+            class="nav-burger-item"
+            onclick="activeBurgerBut('buttonBur4')"
+            id="buttonBur4"
+          >
             <p class="nav-burger-item__box">Продавцам техники</p>
           </button>
-          <button class="nav-burger-item">
+          <button
+            class="nav-burger-item"
+            onclick="activeBurgerBut('buttonBur5')"
+            id="buttonBur5"
+          >
             <p class="nav-burger-item__box">Партнерам</p>
           </button>
-          <button class="nav-burger-item">
+          <button
+            class="nav-burger-item"
+            onclick="activeBurgerBut('buttonBur6')"
+            id="buttonBur6"
+          >
             <p class="nav-burger-item__box">Производителям</p>
           </button>
-          <button class="nav-burger-item">
+          <button
+            class="nav-burger-item"
+            onclick="activeBurgerBut('buttonBur7')"
+            id="buttonBur7"
+          >
             <p class="nav-burger-item__box">Наши сервисные центры</p>
           </button>
-          <button class="nav-burger-item">
+          <button
+            class="nav-burger-item"
+            onclick="activeBurgerBut('buttonBur8')"
+            id="buttonBur8"
+          >
             <p class="nav-burger-item__box">Контакты</p>
           </button>
         </nav>
@@ -206,22 +230,46 @@
             <!-- ---------- -->
           </div>
           <nav class="subtitle">
-            <button class="subtitle__box subtitle--active">
+            <button
+              class="subtitle__box subtitle--active"
+              onclick="activeSubtitleBut('buttonSub1')"
+              id="buttonSub1"
+            >
               <h2 class="subtitle__item">Ремонтируемые устройства</h2>
             </button>
-            <button class="subtitle__box">
+            <button
+              class="subtitle__box"
+              onclick="activeSubtitleBut('buttonSub2')"
+              id="buttonSub2"
+            >
               <h2 class="subtitle__item">Дополнительные услуги</h2>
             </button>
-            <button class="subtitle__box">
+            <button
+              class="subtitle__box"
+              onclick="activeSubtitleBut('buttonSub3')"
+              id="buttonSub3"
+            >
               <h2 class="subtitle__item">Цены на услуги</h2>
             </button>
-            <button class="subtitle__box">
+            <button
+              class="subtitle__box"
+              onclick="activeSubtitleBut('buttonSub4')"
+              id="buttonSub4"
+            >
               <h2 class="subtitle__item">Адреса сервисных центров</h2>
             </button>
-            <button class="subtitle__box">
+            <button
+              class="subtitle__box"
+              onclick="activeSubtitleBut('buttonSub5')"
+              id="buttonSub5"
+            >
               <h2 class="subtitle__item">Специальные цены</h2>
             </button>
-            <button class="subtitle__box">
+            <button
+              class="subtitle__box"
+              onclick="activeSubtitleBut('buttonSub6')"
+              id="buttonSub6"
+            >
               <h2 class="subtitle__item">Отзывы</h2>
             </button>
           </nav>
@@ -943,5 +991,6 @@
     <script src="./scrypt.js"></script>
     <script src="./burger-open.js"></script>
     <script src="./subtitle-active.js"></script>
+    <script src="./burgerBut-active.js"></script>
   </body>
 </html>
