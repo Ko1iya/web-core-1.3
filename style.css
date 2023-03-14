@@ -38,6 +38,7 @@ body {
 
 .container {
   max-width: 1366px;
+  /* opacity: 0.1; */
 }
 
 .container--opacity {
@@ -46,6 +47,11 @@ body {
 
 button:hover {
   cursor: pointer;
+}
+
+button {
+  background: none;
+  border: none;
 }
 
 /* Делаем Хедер */

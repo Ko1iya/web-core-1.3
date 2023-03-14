@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="footer-main.css" />
     <link rel="stylesheet" href="get-commercial.css" />
     <link rel="stylesheet" href="burger.css" />
+    <link rel="stylesheet" href="modal-feedback.css" />
     <title>Document</title>
   </head>
   <body>
@@ -951,7 +952,10 @@
         </nav>
         <footer class="footer-burger burger__footer">
           <nav class="footer-nav footer-burger__navigation">
-            <button class="header-item header-item--hover">
+            <button
+              class="header-item header-item--hover"
+              onclick="feedbackOpen()"
+            >
               <img
                 src="./img/header-item/chat.svg"
                 alt="Сообщение"
@@ -986,11 +990,72 @@
           </div>
         </footer>
       </div>
+      <div class="modal-feedback" id="modal-feedback">
+        <button
+          class="header-item modal-feedback__escape header-item--hover"
+          onclick="feedbackOpen()"
+        >
+          <img
+            src="./img/header-item/burger-end.svg"
+            class="header-item__button"
+          />
+        </button>
+        <div class="modal-feedback__title">
+          <h1 class="modal-feedback__el">Услуги и сервисы</h1>
+        </div>
+        <form class="form">
+          <label for="name"></label>
+          <input
+            class="form__item"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Имя"
+          />
+
+          <label for="phone"></label>
+          <input
+            class="form__item"
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Телефон"
+          />
+
+          <label for="email"></label>
+          <input
+            class="form__item"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+          />
+
+          <label for="message"></label>
+          <input
+            class="form__item form__item--message"
+            id="message"
+            name="message"
+            placeholder="Сообщение"
+          />
+
+          <p class="text-confidential">
+            Нажимая “отправить”, вы даете согласие на
+            <span> обработку персональных данных</span> и соглашаетесь с нашей
+            <span class="">политикой конфиденциальности</span>
+          </p>
+
+          <button type="submit" class="mybutton">Отправить</button>
+        </form>
+
+        <!-- конец -->
+      </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./scrypt.js"></script>
     <script src="./burger-open.js"></script>
     <script src="./subtitle-active.js"></script>
     <script src="./burgerBut-active.js"></script>
+    <script src="./feedback-open.js"></script>
   </body>
 </html>

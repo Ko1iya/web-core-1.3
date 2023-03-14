@@ -131,7 +131,7 @@
   color: #7e7e82;
 }
 
-.open {
+.open-burger {
   transform: translateX(320px); /* положение в видимой части экрана */
 }
 

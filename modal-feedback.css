@@ -1,0 +1,136 @@
+.modal-feedback {
+  position: absolute;
+  top: 0;
+  right: -450px;
+  width: 100vw;
+  max-width: 440px;
+  background-color: #ffffff;
+  padding: 24px 0 75px 0;
+  display: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+.modal-feedback__escape {
+  margin-bottom: 40px;
+  margin-left: 16px;
+}
+
+.modal-feedback__title {
+  display: flex;
+  flex-direction: row;
+  font-size: 24px;
+  position: relative;
+  justify-content: space-between;
+  padding-right: 66px;
+  flex-wrap: nowrap;
+}
+
+::placeholder {
+  font-size: 16px;
+  padding: 16px 0 12px 12px;
+}
+
+.modal-feedback__el {
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; */
+  font-size: 28px;
+  min-width: 260px;
+  margin-left: 16px;
+}
+
+.modal-feedback__el::before {
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 8px;
+  background: #41f6d7;
+  left: -4px;
+  border-radius: 4px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form__item {
+  font-size: 16px;
+  font-weight: 400;
+  min-height: 48px;
+  margin: 0 16px;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+}
+
+.form__item--message {
+  min-height: 118px;
+}
+
+.form__item::placeholder {
+  font-family: "TT Lakes", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 16px 0 12px 12px;
+}
+
+.mybutton {
+  position: relative;
+  height: 32px;
+  width: 119px;
+  padding: 6px 18px 6px 6px;
+  background: rgba(255, 62, 121, 1);
+  color: white;
+  border: 1px solid rgba(255, 62, 121, 1);
+  font-weight: bold;
+  border-radius: 16px;
+  margin-left: auto;
+  margin-right: 16px;
+}
+
+.mybutton::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: url(./img/table/white.svg);
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position: -10px;
+  top: 10px;
+  right: 10px;
+}
+
+.mybutton:hover {
+  background: white;
+  color: rgba(255, 62, 121, 1);
+}
+
+.mybutton:hover::after {
+  transition: all 0.3s ease;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-image: url(./img/table/red.svg);
+
+  top: 10px;
+  right: 10px;
+}
+
+.text-confidential {
+  font-size: 14px;
+  margin: 0 16px;
+}
+
+.text-confidential span {
+  color: #ff3e79;
+}
+
+.open-feedback {
+  display: block;
+  transform: translateX(-450px);
+}

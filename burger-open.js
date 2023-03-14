@@ -1,3 +1,5 @@
+// реализовано открытие закрытие бургера
+
 function burgerOpen() {
   const containerOpacity = document.querySelector(".container");
   const menuContainer = document.getElementById("burger");
@@ -5,6 +7,6 @@ function burgerOpen() {
 
   //   console.log(menuContainerid);
   //   console.log(menuContainer);
-  menuContainer.classList.toggle("open");
+  menuContainer.classList.toggle("open-burger");
   containerOpacity.classList.toggle("container--opacity");
 }
