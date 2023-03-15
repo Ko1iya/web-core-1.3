@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="get-commercial.css" />
     <link rel="stylesheet" href="burger.css" />
     <link rel="stylesheet" href="modal-feedback.css" />
+    <link rel="stylesheet" href="backdrop.css" />
     <title>Document</title>
   </head>
   <body>
@@ -101,7 +102,10 @@
         </nav>
         <footer class="footer-burger burger__footer">
           <nav class="footer-nav footer-burger__navigation">
-            <button class="header-item header-item--hover">
+            <button
+              class="header-item header-item--hover"
+              onclick="feedbackOpen()"
+            >
               <img
                 src="./img/header-item/chat.svg"
                 alt="Сообщение"
@@ -162,7 +166,10 @@
 
             <div class="header-decor-block"></div>
 
-            <button class="header-item display-none-768 header-item--hover">
+            <button
+              class="header-item display-none-768 header-item--hover"
+              onclick="feedbackOpen()"
+            >
               <img
                 src="./img/header-item/chat.svg"
                 alt="Сообщение"
@@ -898,6 +905,8 @@
           </div>
         </footer>
       </div>
+      <!-- Заблюренная область -->
+      <div id="backdrop" class="backdrop"></div>
       <div class="burger" id="burger">
         <header class="burger__header">
           <button class="header-item header-item--hover" onclick="burgerOpen()">
@@ -925,28 +934,60 @@
           </button>
         </header>
         <nav class="nav-burger">
-          <button class="nav-burger-item nav-burger-item--active">
+          <button
+            class="nav-burger-item nav-burger-item--active but-for-js"
+            onclick="activeBurgerButMob('buttonBurMob1')"
+            id="buttonBurMob1"
+          >
             <p class="nav-burger-item__box">Ремонт техники</p>
           </button>
-          <button class="nav-burger-item">
+          <button
+            class="nav-burger-item but-for-js"
+            onclick="activeBurgerButMob('buttonBurMob2')"
+            id="buttonBurMob2"
+          >
             <p class="nav-burger-item__box">Услуги и сервисы</p>
           </button>
-          <button class="nav-burger-item">
+          <button
+            class="nav-burger-item but-for-js"
+            onclick="activeBurgerButMob('buttonBurMob3')"
+            id="buttonBurMob3"
+          >
             <p class="nav-burger-item__box">Корпоративным клиентам</p>
           </button>
-          <button class="nav-burger-item">
+          <button
+            class="nav-burger-item but-for-js"
+            onclick="activeBurgerButMob('buttonBurMob4')"
+            id="buttonBurMob4"
+          >
             <p class="nav-burger-item__box">Продавцам техники</p>
           </button>
-          <button class="nav-burger-item">
+          <button
+            class="nav-burger-item but-for-js"
+            onclick="activeBurgerButMob('buttonBurMob5')"
+            id="buttonBurMob5"
+          >
             <p class="nav-burger-item__box">Партнерам</p>
           </button>
-          <button class="nav-burger-item">
+          <button
+            class="nav-burger-item but-for-js"
+            onclick="activeBurgerButMob('buttonBurMob6')"
+            id="buttonBurMob6"
+          >
             <p class="nav-burger-item__box">Производителям</p>
           </button>
-          <button class="nav-burger-item">
+          <button
+            class="nav-burger-item but-for-js"
+            onclick="activeBurgerButMob('buttonBurMob7')"
+            id="buttonBurMob7"
+          >
             <p class="nav-burger-item__box">Наши сервисные центры</p>
           </button>
-          <button class="nav-burger-item">
+          <button
+            class="nav-burger-item but-for-js"
+            onclick="activeBurgerButMob('buttonBurMob8')"
+            id="buttonBurMob8"
+          >
             <p class="nav-burger-item__box">Контакты</p>
           </button>
         </nav>
@@ -1057,5 +1098,6 @@
     <script src="./subtitle-active.js"></script>
     <script src="./burgerBut-active.js"></script>
     <script src="./feedback-open.js"></script>
+    <script src="./burger-but-active-mob.js"></script>
   </body>
 </html>

@@ -1,13 +1,14 @@
 .modal-feedback {
-  position: absolute;
+  position: fixed;
   top: 0;
-  right: -450px;
+  right: -550px;
   width: 100vw;
   max-width: 440px;
   background-color: #ffffff;
   padding: 24px 0 75px 0;
-  display: none;
-  transition: transform 0.5s ease-in-out;
+  display: block;
+  transition: all 0.5s ease-in-out;
+  z-index: 9999;
 }
 
 .modal-feedback__escape {
@@ -131,6 +132,11 @@
 }
 
 .open-feedback {
-  display: block;
-  transform: translateX(-450px);
+  transform: translateX(-550px);
+}
+
+@media (min-width: 1120px) {
+  .modal-feedback__escape {
+    transform: translateX(-80px);
+  }
 }
