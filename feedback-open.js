@@ -6,7 +6,7 @@ function feedbackOpen() {
   //   console.log(menuContainerid);
   //   console.log(menuContainer);
 
-  if (window.innerWidth > 768) {
+  if (window.innerWidth > 1120) {
     containerOpacity.classList.toggle("container--opacity");
   }
 
