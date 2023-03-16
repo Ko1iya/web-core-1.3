@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="burger.css" />
     <link rel="stylesheet" href="modal-feedback.css" />
     <link rel="stylesheet" href="backdrop.css" />
+    <link rel="stylesheet" href="modal-call.css" />
     <title>Document</title>
   </head>
   <body>
@@ -112,7 +113,10 @@
                 class="header-item__button"
               />
             </button>
-            <button class="header-item header-item--hover">
+            <button
+              class="header-item header-item--hover"
+              onclick="feedbackOpenCall()"
+            >
               <img
                 src="./img/header-item/call.svg"
                 alt="Звонок"
@@ -139,6 +143,7 @@
             ><button class="languages__but">CH</button>
           </div>
         </footer>
+        <div class="decor-burger"></div>
       </div>
       <div class="container">
         <header class="header">
@@ -176,7 +181,10 @@
                 class="header-item__button"
               />
             </button>
-            <button class="header-item display-none-768 header-item--hover">
+            <button
+              class="header-item display-none-768 header-item--hover"
+              onclick="feedbackOpenCall()"
+            >
               <img
                 src="./img/header-item/call.svg"
                 alt="Звонок"
@@ -905,8 +913,12 @@
           </div>
         </footer>
       </div>
+
       <!-- Заблюренная область -->
       <div id="backdrop" class="backdrop"></div>
+      <!-- Заблюренная область при открытии feedback -->
+      <div id="backdrop-feedback" class="backdrop-feedback"></div>
+
       <div class="burger" id="burger">
         <header class="burger__header">
           <button class="header-item header-item--hover" onclick="burgerOpen()">
@@ -1003,7 +1015,10 @@
                 class="header-item__button"
               />
             </button>
-            <button class="header-item header-item--hover">
+            <button
+              class="header-item header-item--hover"
+              onclick="feedbackOpenCall()"
+            >
               <img
                 src="./img/header-item/call.svg"
                 alt="Звонок"
@@ -1031,6 +1046,7 @@
           </div>
         </footer>
       </div>
+
       <div class="modal-feedback" id="modal-feedback">
         <button
           class="header-item modal-feedback__escape header-item--hover"
@@ -1042,7 +1058,7 @@
           />
         </button>
         <div class="modal-feedback__title">
-          <h1 class="modal-feedback__el">Услуги и сервисы</h1>
+          <h1 class="modal-feedback__el">Обратная связь</h1>
         </div>
         <form class="form">
           <label for="name"></label>
@@ -1088,9 +1104,41 @@
 
           <button type="submit" class="mybutton">Отправить</button>
         </form>
-
-        <!-- конец -->
       </div>
+
+      <div class="modal-call" id="modal-call">
+        <button
+          class="header-item modal-feedback__escape header-item--hover"
+          onclick="feedbackOpenCall()"
+        >
+          <img
+            src="./img/header-item/burger-end.svg"
+            class="header-item__button"
+          />
+        </button>
+        <div class="modal-feedback__title">
+          <h1 class="modal-feedback__el">Заказать звонок</h1>
+        </div>
+        <form class="form">
+          <label for="phone"></label>
+          <input
+            class="form__item"
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Телефон"
+          />
+
+          <p class="text-confidential">
+            Нажимая “отправить”, вы даете согласие на
+            <span> обработку персональных данных</span> и соглашаетесь с нашей
+            <span class="">политикой конфиденциальности</span>
+          </p>
+
+          <button type="submit" class="mybutton">Отправить</button>
+        </form>
+      </div>
+      <!-- конец -->
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./scrypt.js"></script>
@@ -1099,5 +1147,6 @@
     <script src="./burgerBut-active.js"></script>
     <script src="./feedback-open.js"></script>
     <script src="./burger-but-active-mob.js"></script>
+    <script src="./modal-call.js"></script>
   </body>
 </html>

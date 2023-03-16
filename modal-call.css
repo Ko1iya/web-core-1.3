@@ -1,0 +1,13 @@
+.modal-call {
+  position: fixed;
+  top: 0;
+  right: -550px;
+  width: 100vw;
+  height: 100vh;
+  max-width: 440px;
+  background-color: #ffffff;
+  padding: 24px 0 75px 0;
+  display: block;
+  transition: all 0.5s ease-in-out;
+  z-index: 9999;
+}
