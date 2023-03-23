@@ -29,6 +29,7 @@
   height: 88px;
   gap: 16px;
   flex-direction: row;
+  display: flex;
 }
 
 /* .header-item {
